@@ -13,18 +13,35 @@ const Header = () => {
     setNavbarOpen(!navbarOpen);
   };
 
-  // Sticky Navbar
+  // Sticky Navbar with smooth scroll
   const [sticky, setSticky] = useState(false);
+  const [prevScrollY, setPrevScrollY] = useState(0);
+
   const handleStickyNavbar = () => {
-    if (window.scrollY >= 80) {
-      setSticky(true);
+    const scrollY = window.scrollY;
+    
+    // Use hysteresis to prevent jitter: set sticky at 80px when scrolling down, remove at 60px when scrolling up
+    if (scrollY > prevScrollY) {
+      // Scrolling down
+      if (scrollY >= 80) {
+        setSticky(true);
+      }
     } else {
-      setSticky(false);
+      // Scrolling up
+      if (scrollY <= 60) {
+        setSticky(false);
+      }
     }
+    
+    setPrevScrollY(scrollY);
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
-  });
+    return () => {
+      window.removeEventListener("scroll", handleStickyNavbar);
+    };
+  }, [prevScrollY]);
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
@@ -41,10 +58,10 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header top-0 left-0 z-40 flex w-full items-center ${
+        className={`header top-0 left-0 z-40 flex w-full items-center bg-gradient-to-r from-white/90 to-blue-50/90 dark:from-gray-900/95 dark:to-gray-800/95 backdrop-blur-xl border-b border-blue-100/30 dark:border-blue-900/30 ${
           sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark shadow-sticky fixed z-9999 bg-white/80 backdrop-blur-xs transition"
-            : "absolute bg-transparent"
+            ? "fixed z-9999 transition shadow-lg dark:shadow-xl"
+            : "absolute"
         }`}
       >
         <div className="container">
@@ -52,9 +69,7 @@ const Header = () => {
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                } `}
+                className="header-logo block w-full py-5 lg:py-2"
               >
                 <Image
                   src="/images/logo/logo-2.svg"
@@ -158,23 +173,7 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <Link
-                  href="/signin"
-                  className="text-dark hidden px-7 py-3 text-base font-medium hover:opacity-70 md:block dark:text-white"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  href="/signup"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 hidden rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Sign Up
-                </Link>
-                <div>
-                  <ThemeToggler />
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>

@@ -35,13 +35,13 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-16 md:py-20 lg:py-28 bg-white">
+    <section className="py-16 md:py-20 lg:py-28 bg-white dark:bg-gray-800">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
-            Why Choose <span className="text-blue-600">Us?</span>
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-6">
+            Why Choose <span className="text-blue-600 dark:text-blue-400">Us?</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             We're the top-rated AC service in Faridabad & Delhi NCR. Trusted by 1000+ customers with 99% satisfaction rate.
           </p>
         </div>
@@ -50,15 +50,15 @@ const WhyChooseUs = () => {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="group bg-gray-50 rounded-2xl p-8 hover:bg-blue-50 hover:shadow-xl transition duration-300 border border-gray-200 hover:border-blue-300"
+              className="group bg-gray-50 dark:bg-gray-700 rounded-2xl p-8 hover:bg-blue-50 dark:hover:bg-gray-600 hover:shadow-xl transition duration-300 border border-gray-200 dark:border-gray-600 hover:border-blue-300"
             >
-              <div className="text-5xl mb-4 group-hover:scale-110 transition duration-300">
+              <div className={`text-5xl mb-4 group-hover:scale-110 transition duration-300 ${reason.title === "Expert Technicians" ? "font-black text-green-400" : ""}`}>
                 {reason.icon}
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">
                 {reason.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">{reason.description}</p>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{reason.description}</p>
             </div>
           ))}
         </div>
