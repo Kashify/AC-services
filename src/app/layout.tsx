@@ -2,6 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import MobileSticky from "@/components/MobileSticky";
 import ScrollToTop from "@/components/ScrollToTop";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import { Inter } from "next/font/google";
@@ -22,7 +23,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className={`bg-white dark:bg-black ${inter.className}`}>
         <Providers>
           <div className="isolate">
             <Header />
@@ -31,6 +32,7 @@ export default function RootLayout({
           </div>
           <WhatsAppCTA />
           <ScrollToTop />
+          <MobileSticky />
         </Providers>
       </body>
     </html>
