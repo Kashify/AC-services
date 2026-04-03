@@ -14,9 +14,9 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AC Repair & Service in Gurgaon | 30 Min Response | 4.8⭐ Rated",
+  title: "AC Repair & Service in Faridabad | 30 Min Response | 4.8⭐ Rated",
   description:
-    "Expert AC repair, installation & maintenance in Gurgaon & Delhi NCR. Same-day service, certified technicians, 24/7 availability. Call now or WhatsApp!",
+    "Expert AC repair, installation & maintenance in Faridabad & Delhi NCR. Same-day service, certified technicians, 24/7 availability. Call now or WhatsApp!",
   // other metadata
 };
 

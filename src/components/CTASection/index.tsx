@@ -6,7 +6,7 @@ const CTASection = () => {
   const phoneNumber = "+919876543210";
   const whatsappNumber = "919876543210";
   const message = encodeURIComponent(
-    "Hi! I need AC repair/service in Gurgaon. What's your availability?"
+    "Hi! I need AC repair/service in Faridabad. What's your availability?"
   );
 
   return (
@@ -32,7 +32,7 @@ const CTASection = () => {
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-blue-100 mb-6 max-w-2xl mx-auto leading-relaxed">
-            Get professional AC repair, installation & maintenance in Gurgaon. 
+            Get professional AC repair, installation & maintenance in Faridabad. 
             <span className="block font-bold text-yellow-300 mt-2">
               Response within 30 minutes • Same-day service available
             </span>
@@ -79,7 +79,7 @@ const CTASection = () => {
 
           {/* Trust Footer */}
           <p className="text-blue-100 text-lg">
-            Available 24/7 • Across Gurgaon, Delhi & NCR • 4.8⭐ Rated
+            Available 24/7 • Across Faridabad, Delhi & NCR • 4.8⭐ Rated
           </p>
         </div>
       </div>

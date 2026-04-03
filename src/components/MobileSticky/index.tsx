@@ -5,7 +5,7 @@ import Link from "next/link";
 const MobileSticky = () => {
   const phoneNumber = "+919876543210";
   const whatsappNumber = "919876543210";
-  const message = encodeURIComponent("Hi! I need AC repair/service in Gurgaon.");
+  const message = encodeURIComponent("Hi! I need AC repair/service in Faridabad.");
 
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t-2 border-gray-200 shadow-2xl md:hidden z-40 animate-in slide-in-from-bottom">

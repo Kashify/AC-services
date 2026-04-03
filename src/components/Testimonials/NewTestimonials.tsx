@@ -6,13 +6,13 @@ const Testimonials = () => {
       name: "Rajesh Kumar",
       rating: 5,
       text: "Excellent service! Technician arrived within 30 minutes and fixed my AC quickly. Very professional and affordable.",
-      location: "Gurgaon",
+      location: "Faridabad",
       image: "👨",
     },
     {
       name: "Priya Singh",
       rating: 5,
-      text: "Best AC repair service in Gurgaon. They explained the problem clearly and didn't overcharge. Highly recommended!",
+      text: "Best AC repair service in Faridabad. They explained the problem clearly and didn't overcharge. Highly recommended!",
       location: "Delhi",
       image: "👩",
     },
@@ -35,7 +35,7 @@ const Testimonials = () => {
             <span className="text-blue-600">1000+ Happy Customers</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            See why customers in Gurgaon, Delhi & NCR choose us for their AC needs
+            See why customers in Faridabad, Delhi & NCR choose us for their AC needs
           </p>
         </div>
 

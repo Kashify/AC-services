@@ -6,7 +6,7 @@ const Hero = () => {
   const phoneNumber = "+919876543210";
   const whatsappNumber = "919876543210";
   const message = encodeURIComponent(
-    "Hi! I need AC repair/service in Gurgaon. Please contact me."
+    "Hi! I need AC repair/service in Faridabad. Please contact me."
   );
 
   return (
@@ -29,7 +29,7 @@ const Hero = () => {
 
               {/* Main Headline */}
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
-                AC Repair in Gurgaon –{" "}
+                AC Repair in Faridabad –{" "}
                 <span className="text-yellow-300">30 Min Response</span>
               </h1>
 
@@ -37,7 +37,7 @@ const Hero = () => {
               <p className="text-xl md:text-2xl text-blue-100 mb-2 font-semibold">✓ Same Day Service • 4.8⭐ Rating • Affordable Pricing</p>
               
               <p className="text-lg text-blue-50 mb-8 leading-relaxed max-w-xl">
-                Expert AC repair, gas refill, installation & maintenance. Certified technicians, verified services, transparent pricing. Serving Gurgaon, Delhi & NCR.
+                Expert AC repair, gas refill, installation & maintenance. Certified technicians, verified services, transparent pricing. Serving Faridabad, Delhi & NCR.
               </p>
 
               {/* Trust Indicators */}

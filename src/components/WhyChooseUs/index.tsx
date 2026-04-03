@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
             Why Choose <span className="text-blue-600">Us?</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We're the top-rated AC service in Gurgaon & Delhi NCR. Trusted by 1000+ customers with 99% satisfaction rate.
+            We're the top-rated AC service in Faridabad & Delhi NCR. Trusted by 1000+ customers with 99% satisfaction rate.
           </p>
         </div>
 
