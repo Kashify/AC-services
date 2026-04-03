@@ -8,15 +8,15 @@ import CTASection from "@/components/CTASection";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
-import Testimonials from "@/components/Testimonials";
+import Testimonials from "@/components/Testimonials/NewTestimonials";
 import Video from "@/components/Video";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AC Repair & Service in Faridabad & NCR | Expert Technicians",
+  title: "AC Repair & Service in Gurgaon | 30 Min Response | 4.8⭐ Rated",
   description:
-    "Professional AC repair, installation & maintenance in Faridabad. Same-day service, certified technicians, 24/7 availability. Call now!",
+    "Expert AC repair, installation & maintenance in Gurgaon & Delhi NCR. Same-day service, certified technicians, 24/7 availability. Call now or WhatsApp!",
   // other metadata
 };
 
