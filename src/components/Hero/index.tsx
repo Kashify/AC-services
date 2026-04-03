@@ -63,7 +63,7 @@ const Hero = () => {
                   className="inline-flex items-center justify-center gap-3 bg-white text-blue-600 font-black py-5 px-10 rounded-xl transition duration-300 shadow-2xl hover:shadow-3xl hover:scale-105 transform text-lg"
                 >
            
-                  📞 Call Now
+                  📞 Call us
                 </a>
                 <Link
                   href={`https://wa.me/${whatsappNumber}?text=${message}`}
